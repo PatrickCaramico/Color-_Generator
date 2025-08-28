@@ -34,13 +34,20 @@ Este é um projeto de front-end dinâmico, criado para ser uma ferramenta elegan
 
 ---
 
-### Como Usar
+### 🚀 Acesso e Execução
 
-1.  Clone o repositório para sua máquina local.
-2.  Abra o arquivo `index.html` em seu navegador.
-3.  Clique no botão "Gerar Nova Paleta" para começar.
-4.  Clique em uma das cores para explorar seus detalhes e tons de degradê.
-5.  Clique nos códigos de cor para copiá-los para a área de transferência.
+O projeto pode ser visualizado diretamente no navegador.
+
+**1. Acesso Online:**
+[Projeto Gerador de cores](https://cores-gerador.netlify.app/)
+
+**2. Acesso Local:**
+Para rodar o projeto localmente, siga estes passos:
+
+1.  Clone o repositório para sua máquina.
+2.  Navegue até a pasta do projeto.
+3.  Abra o arquivo `index.html` em seu navegador para começar.
+
 
 ### Autor
 
