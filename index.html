@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Title -->
+    <title>Projeto Gerador de Cores</title>
+  </head>
+  <body>
+    <!-- Ilustração SVG topo -->
+    <div
+      class="svg-topo"
+      style="
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+      "
+    >
+      <svg
+        width="120"
+        height="120"
+        viewBox="0 0 120 120"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="60" cy="60" r="55" fill="url(#paint0_radial)" />
+        <circle cx="60" cy="60" r="40" fill="url(#paint1_radial)" />
+        <circle cx="60" cy="60" r="25" fill="url(#paint2_radial)" />
+        <defs>
+          <radialGradient
+            id="paint0_radial"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="translate(60 60) scale(55)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#a1c4fd" />
+            <stop offset="1" stop-color="#fbc2eb" />
+          </radialGradient>
+          <radialGradient
+            id="paint1_radial"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="translate(60 60) scale(40)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#fcb69f" />
+            <stop offset="1" stop-color="#c2e9fb" />
+          </radialGradient>
+          <radialGradient
+            id="paint2_radial"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="translate(60 60) scale(25)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#fff" />
+            <stop offset="1" stop-color="#a1c4fd" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+    <!-- Header - Inicio -->
+    <header class="header">
+      <h1 class="header__title">Gerador de Cores</h1>
+
+      <p class="header__description">
+        Clique em "Gerar" para uma paleta aleatória. Clique em uma cor para ver
+        paletas sugeridas.
+      </p>
+
+      <button class="button" id="gerar-btn">
+        <span class="button__icon">🎲</span> Gerar nova Paleta
+      </button>
+    </header>
+
+    <!-- Main - Inicio -->
+    <main class="main-content">
+      <section class="section" id="paleta-aleatoria">
+        <h2 class="section__title">Paleta Aleatória</h2>
+        <div class="pallete-container" id="paleta-container"></div>
+      </section>
+
+      <section class="section section--hidden">
+        <div
+          class="pallete-related-container"
+          id="paleta-relacionadas-container"
+        ></div>
+      </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+
+  <!-- Modal para exibir cor selecionada e degradês -->
+  <div class="modal" id="color-modal">
+    <div class="modal__content">
+      <span class="modal__close" id="modal-close">&times;</span>
+      <div class="modal__selected-color" id="modal-selected-color"></div>
+      <div class="modal__selected-hex" id="modal-selected-hex"></div>
+      <h3 class="modal__degrade-title">Degradê da cor</h3>
+      <div class="modal__degrade-container" id="modal-degrade-container"></div>
+    </div>
+  </div>
+  <footer class="footer-direitos">
+    Todos os direitos reservados Patrick Souza &copy; 2025
+  </footer>
+</html>
